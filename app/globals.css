@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Jost";
+    overflow: hidden;
+  }
+
+  .bgHome {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734583774/NBT-Chandrayaan3/assets/coverImages/home/ccn7ytwb0cf03bbcpbp2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page1 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734586182/NBT-Chandrayaan3/assets/bgImages/page1/ku77xzmjqiuaysavtr0w.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page2 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734589046/NBT-Chandrayaan3/assets/bgImages/page2/uuucvktxph2wbnmkfbym.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page3 {
+    background-image: url("/images/Page2/Sun_1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page4 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600374/NBT-Chandrayaan3/assets/bgImages/page4/meqlzft8lspwqhgc28pw.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page5 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600462/NBT-Chandrayaan3/assets/bgImages/page5/wbsucpt9psrnckctmuxc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page6 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600527/NBT-Chandrayaan3/assets/bgImages/page6/dcnxncemahivxl1f3zmo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page7 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600583/NBT-Chandrayaan3/assets/bgImages/page7/rhqhe2yvsr3bju6zouov.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page8 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600873/NBT-Chandrayaan3/assets/bgImages/page8/ife8c4jvcm6v4s7cytb7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page9 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600919/NBT-Chandrayaan3/assets/bgImages/page9/tronaohxdtcnqtommfqf.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page10 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734601267/NBT-Chandrayaan3/assets/bgImages/page10/qylalkxzceli2q7jaloo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page11 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734681266/NBT-Chandrayaan3/assets/bgImages/page11/jh0qh6ax27da3snb5e91.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page12 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734681288/NBT-Chandrayaan3/assets/bgImages/page12/masyzwp4rvswddcau7gt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page13 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734682602/NBT-Chandrayaan3/assets/bgImages/page13/etxfjr5xwkpsq4wlvq7l.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page14 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734683354/NBT-Chandrayaan3/assets/bgImages/page14/u18hjlor8sd6ybudpfol.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page15 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734683446/NBT-Chandrayaan3/assets/bgImages/page15/fvtabwhabfv7tgatnjs9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page16 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734683526/NBT-Chandrayaan3/assets/bgImages/page16/waydjjihwvvqd4vnbqa0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page17 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734683594/NBT-Chandrayaan3/assets/bgImages/page17/rqeywxejhwihfuwdhf0k.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page18 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734683825/NBT-Chandrayaan3/assets/bgImages/page18/n2y1wpnuwpeyw5humxyc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .quizBG {
+    background-image: url("/images/home/bg-home-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
