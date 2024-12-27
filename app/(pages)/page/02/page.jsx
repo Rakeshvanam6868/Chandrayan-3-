@@ -4,12 +4,12 @@ import React,{useEffect} from "react";
 import { useRouter } from "next/navigation";
 import TwoColumnLayout4 from "@/app/_Layouts/TwoColumnLayout4";
 import { getCldImageUrl } from "next-cloudinary";
-import { useGlobalState } from "@/app/context/GlobalStateContext";
-import  lang  from "../../../utils/lang";
+// import { useGlobalState } from "@/app/context/GlobalStateContext";
+// import  lang  from "../../../utils/lang";
 
 function Page2() {
   const router = useRouter();
-  const { state, setCurrentPath } = useGlobalState();
+  // const { state, setCurrentPath } = useGlobalState();
 
   const prevPageHandler = () => {
     router.push("/page/01");
@@ -19,11 +19,11 @@ function Page2() {
     router.push("/page/03");
   };
 
-  useEffect(() => {
-      if (state.currentPath) {
-        setCurrentPath(router.push("/page/02")); // Update the current path when the component mounts
-      }
-    }, []);
+  // useEffect(() => {
+  //     if (state.currentPath) {
+  //       setCurrentPath(router.push("/page/02")); // Update the current path when the component mounts
+  //     }
+  //   }, []);
 
   let imgURL1 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page2/gd2m5ir1xdflrfxxfduv",
@@ -65,13 +65,13 @@ function Page2() {
   //   const para2 = Array.isArray(pageData?.para2) ? pageData.para2 : [];
   //   console.log(para2);
 
-  const pageData = lang?.find(
-    (language) => language[state.lang.toLowerCase()] && language[state.lang.toLowerCase()][0]?.page2?.[0]
-  );
+  // const pageData = lang?.find(
+  //   (language) => language[state.lang.toLowerCase()] && language[state.lang.toLowerCase()][0]?.page2?.[0]
+  // );
 
-  // Extract para1 and para2 dynamically from pageData
-  const para1 = pageData?.[state.lang.toLowerCase()]?.[0]?.page2?.[0]?.para1 || ["Default content for para1"];
-  const para2 = pageData?.[state.lang.toLowerCase()]?.[0]?.page2?.[0]?.para2 || ["Default content for para2"];
+  // // Extract para1 and para2 dynamically from pageData
+  // const para1 = pageData?.[state.lang.toLowerCase()]?.[0]?.page2?.[0]?.para1 || ["Default content for para1"];
+  // const para2 = pageData?.[state.lang.toLowerCase()]?.[0]?.page2?.[0]?.para2 || ["Default content for para2"];
 
 
   return (
@@ -82,24 +82,24 @@ function Page2() {
           
           textContent1={
             <>
-              {Array.isArray(para1) && para1.length > 0
+              {/* {Array.isArray(para1) && para1.length > 0
                 ? para1.map((text, index) => (
                     <p key={index} className="text-justify text-lg font-medium select-none">
                       {text}
                     </p>
                   ))
-                : <p className="text-justify text-lg font-medium select-none">No content available.</p>}
+                : <p className="text-justify text-lg font-medium select-none">No content available.</p>} */}
             </>
           }
           textContent2={
             <>
-              {Array.isArray(para2) && para2.length > 0
+              {/* {Array.isArray(para2) && para2.length > 0
                 ? para2.map((text, index) => (
                     <p key={index} className="text-justify text-lg font-medium select-none">
                       {text}
                     </p>
                   ))
-                : <p className="text-justify text-lg font-medium select-none">No content available.</p>}
+                : <p className="text-justify text-lg font-medium select-none">No content available.</p>} */}
             </>
           }
           

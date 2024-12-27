@@ -4,12 +4,12 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import TwoColumnLayout1 from "@/app/_Layouts/TwoColumnLayout1";
 import { getCldImageUrl } from 'next-cloudinary';
-import { useGlobalState } from "@/app/context/GlobalStateContext";
-import  lang  from "../../../utils/lang";
+// import { useGlobalState } from "@/app/context/GlobalStateContext";
+// import  lang  from "../../../utils/lang";
 
 function Page1() {
   const router = useRouter();
-  const { state, setCurrentPath } = useGlobalState();
+  // const { state, setCurrentPath } = useGlobalState();
 
   const prevPageHandler = () => {
     router.push("/author");
@@ -19,11 +19,11 @@ function Page1() {
     router.push("/page/02");
   };
 
-  useEffect(() => {
-    if (state.currentPath) {
-      setCurrentPath(router.push("/page/01")); // Update the current path when the component mounts
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (state.currentPath) {
+  //     setCurrentPath(router.push("/page/01")); // Update the current path when the component mounts
+  //   }
+  // }, []);
 
   let imgURL1 = getCldImageUrl({
     src: 'NBT-Chandrayaan3/assets/fgImages/page1/sn5v7djagnh4wqetd8nf',
@@ -33,9 +33,9 @@ function Page1() {
     crop: 'auto'
   });
 
-  const pageData = lang?.find(language => language[state.lang.toLowerCase()] && language[state.lang.toLowerCase()][0]?.page1?.[0]);
+  // const pageData = lang?.find(language => language[state.lang.toLowerCase()] && language[state.lang.toLowerCase()][0]?.page1?.[0]);
 
-  const para1 = pageData?.[state.lang.toLowerCase()]?.[0]?.page1?.[0]?.para1?.[0] || "Default content.";
+  // const para1 = pageData?.[state.lang.toLowerCase()]?.[0]?.page1?.[0]?.para1?.[0] || "Default content.";
 
   return (
     <>
@@ -49,7 +49,7 @@ function Page1() {
             className="bg-cover block ml-[30rem]"
           >
             <p className="text-justify text-3xl font-medium select-none">
-              {para1}
+              {}
             </p>
           </TwoColumnLayout1>
         </div>

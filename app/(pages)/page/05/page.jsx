@@ -29,7 +29,7 @@ function Page5() {
       <section className="w-full h-screen bg-cover page5 select-none">
         <div className="grid grid-rows-2 grid-cols-2 gap-4 h-full p-6">
           {/* Top-left (Text Section 1) */}
-          <div className="flex flex-col gap-4 mt-10 ml-10 text-justify text-2xl font-medium sm:gap-1 sm:-mt-2 sm:ml-2 sm:text-sm lg:gap-4 lg:mt-10 lg:ml-10 lg:text-justify lg:text-2xl">
+          <div className="flex flex-col gap-4 mt-10 ml-10 text-justify text-2xl font-medium sm:gap-1 sm:-mt-2 sm:ml-2 sm:text-sm lg:gap-4 lg:mt-10 lg:ml-10 lg:text-justify lg:text-2xl xl:gap-4 xl:mt-10 xl:ml-10 xl:text-2xl">
             <p>Saint Tell me, little one, how big is the moon?</p>
             <p>Princess - It is as wide as my index finger.</p>
             <p>
@@ -48,7 +48,7 @@ function Page5() {
             <Image
               src={imgURL1}
               alt="Moon Story Image 1"
-              className="ml-12 mt-16 sm:w-[600px] sm:h-[250px] sm:mt-4  lg:mt-[150px] lg:w-[1000px] lg:h-[600px] "
+              className="ml-12 mt-16 sm:w-[700px] sm:h-[250px] sm:mt-4 sm:ml-14 lg:mt-[150px] lg:w-[1000px] lg:h-[600px] xl:mt-[55px]"
               width={1200}
               height={800}
               quality={100}
@@ -61,7 +61,7 @@ function Page5() {
             <Image
               src={imgURL2}
               alt="Moon Story Image 2"
-              className="mb-28 -ml-6 sm:w-[250px] sm:h-[150px] sm:mb-10 lg:w-[650px] lg:h-[500px] lg:mb-[140px] "
+              className="mb-28 -ml-6 sm:w-[300px] sm:h-[200px] sm:mt-6 lg:w-[650px] lg:h-[500px] lg:mb-[140px] xl:mb-[120px] "
               width={500}
               height={500}
               quality={100}
