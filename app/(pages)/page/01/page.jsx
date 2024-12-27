@@ -34,7 +34,8 @@ function Page1() {
     cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
   });
    
-  console.log(imgURL1);
+  
+
   // const pageData = lang?.find(language => language[state.lang.toLowerCase()] && language[state.lang.toLowerCase()][0]?.page1?.[0]);
 
   // const para1 = pageData?.[state.lang.toLowerCase()]?.[0]?.page1?.[0]?.para1?.[0] || "Default content.";
