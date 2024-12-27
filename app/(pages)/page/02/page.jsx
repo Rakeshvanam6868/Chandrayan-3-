@@ -27,6 +27,7 @@ function Page2() {
 
   let imgURL1 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page2/gd2m5ir1xdflrfxxfduv",
+    cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
     // width: 960,
     // height: 600,
     // fillBackground: true,
@@ -35,6 +36,7 @@ function Page2() {
 
   let imgURL2 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page2/marjuyovclvtt9mld98d",
+    cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
     // width: 960,
     // height: 600,
     // fillBackground: true,
