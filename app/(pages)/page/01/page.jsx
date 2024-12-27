@@ -30,7 +30,8 @@ function Page1() {
     width: 139,
     height: 92,
     fillBackground: true,
-    crop: 'auto'
+    crop: 'auto',
+    cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
   });
 
   // const pageData = lang?.find(language => language[state.lang.toLowerCase()] && language[state.lang.toLowerCase()][0]?.page1?.[0]);
