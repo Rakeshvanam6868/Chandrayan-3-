@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import TwoColumnLayout4 from "@/app/_Layouts/TwoColumnLayout4";
 import { getCldImageUrl } from "next-cloudinary";
 import { useGlobalState } from "@/app/context/GlobalStateContext";
-import { lang } from "../../../utils/lang";
+import  lang  from "../../../utils/lang";
 
 function Page2() {
   const router = useRouter();

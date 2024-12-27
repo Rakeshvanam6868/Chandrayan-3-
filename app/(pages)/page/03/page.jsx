@@ -3,7 +3,7 @@ import FooterStory from "@/app/_Components/FooterStory";
 import React,{useEffect} from "react";
 import { useRouter } from "next/navigation";
 import { useGlobalState } from "@/app/context/GlobalStateContext";
-import { lang } from "../../../utils/lang";
+import  lang  from "../../../utils/lang";
 function Page3() {
   const router = useRouter();
   const { state, setCurrentPath } = useGlobalState();
