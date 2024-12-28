@@ -15,9 +15,18 @@ function Page4() {
     router.push("/page/05");
   };
 
-  let imgURL1 = getCldImageUrl({
+  let imgURL1;
+if (typeof window !== "undefined") {
+  imgURL1 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page4/b838utzg4iozpiqxnk1d",
+    cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+    // width: 960,
+    // height: 600,
+    // fillBackground: true,
+    // crop: 'auto'
   });
+}
+
 
   return (
     <>
