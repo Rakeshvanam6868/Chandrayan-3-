@@ -28,27 +28,20 @@ export default function Home() {
           />
         </div>
         <div className="xl:w-[30rem] xl:max-h-80 mx-auto top-12 flex items-center justify-center">
-          {/* <Image
-            src="/images/home/homePageBG1.png"
-            alt="Chandrayaan 3"
-            width={610}
-            height={610}
-            quality={100}
-            priority={true}
-            className="mt-5 2xl:w-[38rem] 2xl:bottom-48"
-            style={{ height: "auto", width: "auto" }}
-          /> */}
+          {/* Using Cloudinary image with optimization */}
           <CldImage
             src="https://res.cloudinary.com/dydh2rfnk/image/upload/v1734583824/NBT-Chandrayaan3/assets/coverImages/home/znrri581t1m0yfeg2emd.png"
             width={2362}
             height={2834}
-            crop={{ type: "auto", source: true }}
+            crop="fill" // Using correct prop for cropping
             alt="Chandrayaan3 Cover Page"
             className="mt-5 2xl:w-[38rem] 2xl:bottom-48"
             style={{ height: "auto", width: "auto" }}
           />
         </div>
       </section>
+
+      {/* Footer and Modal for Language selection */}
       <FooterMain />
       <Modal
         isOpen={isModalOpen}
