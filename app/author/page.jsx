@@ -14,6 +14,8 @@ function Author() {
     router.push("/page/01");
   };
 
+  const cloudinaryCloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME; // Access Cloudinary cloud name from environment variable
+
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover select-none">
@@ -48,20 +50,11 @@ function Author() {
             </Link>
           </div>
           <div className="mx-auto md:my-1 lg:my-3 xl:my-0 flex items-center justify-center">
-            {/* <Image
-              src="/images/author/author.jpg"
-              alt="Yuvraj Malik"
-              width={550}
-              height={100}
-              priority={true}
-              quality={100}
-              className="md:h-[55vh] lg:h-[60vh] xl:h-[70vh] shadow-lg"
-            /> */}
             <CldImage
-              src="https://res.cloudinary.com/dydh2rfnk/image/upload/v1734585149/NBT-Chandrayaan3/assets/author/nx1z2v99wxw3egsvgpja.jpg"
+              src={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/v1734585149/NBT-Chandrayaan3/assets/author/nx1z2v99wxw3egsvgpja.jpg`}
               width={493}
               height={506}
-              crop={{ type: "auto", source: true }}
+              crop="auto"
               alt="Yuvraj Malik Image"
               className="md:h-[55vh] lg:h-[60vh] xl:h-[70vh] shadow-lg"
             />
