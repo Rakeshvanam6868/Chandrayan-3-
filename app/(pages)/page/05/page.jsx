@@ -16,13 +16,28 @@ function Page5() {
     router.push("/page/06");
   };
 
-  const imgURL1 = getCldImageUrl({
+  let imgURL1, imgURL2;
+
+if (typeof window !== "undefined") {
+  imgURL1 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page5/rk0f6kk64kskaptbyoyt",
+    cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+    // width: 960,
+    // height: 600,
+    // fillBackground: true,
+    // crop: 'auto'
   });
 
-  const imgURL2 = getCldImageUrl({
+  imgURL2 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page5/xpjmjn2oo14z4nv0uyx1",
+    cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+    // width: 960,
+    // height: 600,
+    // fillBackground: true,
+    // crop: 'auto'
   });
+}
+
 
   return (
     <>

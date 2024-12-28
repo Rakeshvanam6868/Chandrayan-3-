@@ -16,9 +16,20 @@ export default function Page15() {
     router.push("/page/16");
   };
 
-  const imgURL = getCldImageUrl({
-    src: "NBT-Chandrayaan3/assets/fgImages/page15/p5yzrsqdkrmcqsu780dz",
-  });
+  let imgURL;
+
+  if (typeof window !== "undefined") {
+    imgURL = getCldImageUrl({
+      src: "NBT-Chandrayaan3/assets/fgImages/page15/p5yzrsqdkrmcqsu780dz",
+      cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+      // Uncomment for additional transformations if required
+      // width: 960,
+      // height: 600,
+      // fillBackground: true,
+      // crop: 'auto'
+    });
+  }
+  
 
   return (
     <>

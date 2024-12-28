@@ -15,9 +15,19 @@ export default function Page11() {
     router.push("/page/12");
   };
 
-  const imgURL1 = getCldImageUrl({
+  let imgURL1;
+
+if (typeof window !== "undefined") {
+  imgURL1 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page11/ibq1kx9fqjricropqfde",
+    cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+    // Uncomment the following for additional options if needed
+    // width: 960,
+    // height: 600,
+    // fillBackground: true,
+    // crop: 'auto'
   });
+}
 
   return (
     <>
