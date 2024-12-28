@@ -12,6 +12,14 @@ export default function Home() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
+  const cloudinaryCloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+
+  // If the cloud name is not set, log an error and return
+  if (!cloudinaryCloudName) {
+    console.error("Cloudinary Cloud Name is missing from the environment variables.");
+    return null; // Optionally return a fallback UI or nothing
+  }
+
   return (
     <>
       <section className="w-[100vw] h-[100vh] bgHome overflow-hidden">
@@ -28,20 +36,27 @@ export default function Home() {
           />
         </div>
         <div className="xl:w-[30rem] xl:max-h-80 mx-auto top-12 flex items-center justify-center">
-          {/* Using Cloudinary image with optimization */}
+          {/* <Image
+            src="/images/home/homePageBG1.png"
+            alt="Chandrayaan 3"
+            width={610}
+            height={610}
+            quality={100}
+            priority={true}
+            className="mt-5 2xl:w-[38rem] 2xl:bottom-48"
+            style={{ height: "auto", width: "auto" }}
+          /> */}
           <CldImage
-            src="https://res.cloudinary.com/dydh2rfnk/image/upload/v1734583824/NBT-Chandrayaan3/assets/coverImages/home/znrri581t1m0yfeg2emd.png"
+            src={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/v1734583824/NBT-Chandrayaan3/assets/coverImages/home/znrri581t1m0yfeg2emd.png`}
             width={2362}
             height={2834}
-            crop="fill" // Using correct prop for cropping
+            crop={{ type: "auto", source: true }}
             alt="Chandrayaan3 Cover Page"
             className="mt-5 2xl:w-[38rem] 2xl:bottom-48"
             style={{ height: "auto", width: "auto" }}
           />
         </div>
       </section>
-
-      {/* Footer and Modal for Language selection */}
       <FooterMain />
       <Modal
         isOpen={isModalOpen}
