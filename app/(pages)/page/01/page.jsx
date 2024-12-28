@@ -25,7 +25,8 @@ function Page1() {
   //   }
   // }, []);
 
-  if (process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME) {
+  let imgURL1;
+  if (typeof window !== "undefined") {
     imgURL1 = getCldImageUrl({
       src: 'NBT-Chandrayaan3/assets/fgImages/page1/sn5v7djagnh4wqetd8nf',
       width: 139,
@@ -34,8 +35,6 @@ function Page1() {
       crop: 'auto',
       cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
     });
-  } else {
-    console.error('Cloudinary Cloud Name is not defined');
   }
   
    
