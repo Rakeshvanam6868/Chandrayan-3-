@@ -25,7 +25,9 @@ function Page2() {
   //     }
   //   }, []);
 
-  let imgURL1 = getCldImageUrl({
+  let imgURL1;
+if (typeof window !== "undefined") {
+  imgURL1 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page2/gd2m5ir1xdflrfxxfduv",
     cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
     // width: 960,
@@ -33,8 +35,11 @@ function Page2() {
     // fillBackground: true,
     // crop: 'auto'
   });
+}
 
-  let imgURL2 = getCldImageUrl({
+let imgURL2;
+if (typeof window !== "undefined") {
+  imgURL2 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page2/marjuyovclvtt9mld98d",
     cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
     // width: 960,
@@ -42,6 +47,10 @@ function Page2() {
     // fillBackground: true,
     // crop: 'auto'
   });
+}
+
+
+  
 
   // let imgURL1 = getCldImageUrl({
   //   src: "NBT-Chandrayaan3/assets/fgImages/page2/gd2m5ir1xdflrfxxfduv",
