@@ -14,7 +14,14 @@ function Author() {
     router.push("/page/01");
   };
 
-  const cloudinaryCloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME; // Access Cloudinary cloud name from environment variable
+  // Safely access the Cloudinary cloud name from environment variables
+  const cloudinaryCloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+
+  // If the cloud name is not set, log an error and return
+  if (!cloudinaryCloudName) {
+    console.error("Cloudinary Cloud Name is missing from the environment variables.");
+    return null; // Optionally return a fallback UI or nothing
+  }
 
   return (
     <>
