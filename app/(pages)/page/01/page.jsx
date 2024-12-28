@@ -25,14 +25,19 @@ function Page1() {
   //   }
   // }, []);
 
-  let imgURL1 = getCldImageUrl({
-    src: 'NBT-Chandrayaan3/assets/fgImages/page1/sn5v7djagnh4wqetd8nf',
-    width: 139,
-    height: 92,
-    fillBackground: true,
-    crop: 'auto',
-    cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
-  });
+  if (process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME) {
+    imgURL1 = getCldImageUrl({
+      src: 'NBT-Chandrayaan3/assets/fgImages/page1/sn5v7djagnh4wqetd8nf',
+      width: 139,
+      height: 92,
+      fillBackground: true,
+      crop: 'auto',
+      cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+    });
+  } else {
+    console.error('Cloudinary Cloud Name is not defined');
+  }
+  
    
   
 
