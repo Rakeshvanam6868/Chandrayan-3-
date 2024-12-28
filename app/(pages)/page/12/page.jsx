@@ -17,9 +17,9 @@ export default function Page12() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page12 select-none">
-        <div className="flex text-white text-justify text-2xl font-medium w-full px-16 pt-20 gap-12">
-          <div className="flex pl-3 flex-col gap-4">
-            <p className="w-[500px]">
+        <div className="flex text-white text-justify text-2xl font-medium w-full px-16 pt-20  sm:text-sm sm:px-8 sm:pt-6 sm:gap-4 lg:text-2xl lg:px-10 lg:pt-10 lg:gap-2">
+          <div className="flex pl-3 flex-col gap-4  w-1/2 sm:gap-2 lg:gap-6">
+            <p className="">
               Veer&apos;s mind wandered to something he suddenly remembered as
               Dadaji spoke. He interrupted him.
             </p>
@@ -29,7 +29,7 @@ export default function Page12() {
               astronauts?
             </p>
           </div>
-          <div className="flex pl-40 flex-col gap-4">
+          <div className="flex pl-40 flex-col gap-4 w-1/2 sm:pl-8 sm:gap-2 lg:gap-6">
             <p>
               Dadaji - &apos;Vikram&apos; is the name of the lander that has
               landed on the moon. &apos;Pragyan&apos; is the name of the rover

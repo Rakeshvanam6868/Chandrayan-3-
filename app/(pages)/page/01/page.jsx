@@ -7,6 +7,7 @@ import { getCldImageUrl } from 'next-cloudinary';
 // import { useGlobalState } from "@/app/context/GlobalStateContext";
 // import  lang  from "../../../utils/lang";
 
+
 function Page1() {
   const router = useRouter();
   // const { state, setCurrentPath } = useGlobalState();
